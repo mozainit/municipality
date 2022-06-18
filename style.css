@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Vazir';
+    src: url('http://theme.blogfa.com/fonts/Vazir-Light.eot');
+    src: url('http://theme.blogfa.com/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('http://theme.blogfa.com/fonts/Vazir-Light.woff') format('woff'),
+    url('http://theme.blogfa.com/fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('http://theme.blogfa.com/fonts/Vazir-Bold.eot');
+    src: url('http://theme.blogfa.com/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('http://theme.blogfa.com/fonts/Vazir-Bold.woff') format('woff'),
+    url('http://theme.blogfa.com/fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ececec url("back.png");
+    font-family: Vazir;
+    font-size: 14px;
+    line-height: 2em;
+    color: #3e3e3e;
+    word-wrap: break-word;
+    direction: rtl;
+}
+
+table {
+    width: 100% !important;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s;
+    color: #3e3e3e;
+
+}
+
+a:hover {
+    color: #101d4a;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+blockquote {
+    border-right: 2px solid #bbb;
+    margin: 0 20px 0 10px;
+    padding: 0 10px;
+}
+
+.header {
+    background: #fff url("https://s6.uupload.ir/files/header_perb.jpg") center;
+    width: 100%;
+    text-align: center;
+    height: 250px;
+    background-size: cover;
+}
+
+.header a h1 {
+    color: #fff;
+    font-size: 32px;
+    margin: 84px 0 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.header a h1:hover {
+    color: #101d4a;
+}
+
+.header h2 {
+    padding: 6px;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header h2:empty {
+    padding: 0;
+}
+
+#wrp {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#right {
+    width: 70%;
+    float: right;
+    margin-bottom: 11px;
+}
+
+.padd-post {
+    padding: 6px 18px 6px 6px;
+}
+
+.padd-side {
+    padding: 6px 0 0 18px;
+}
+
+.post {
+    background-color: #fff;
+    margin: 0 0 6px;
+    padding-top: 9px;
+}
+
+.post .title a h3 {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.post .title a h3:hover, .post .read-more a:hover {
+    color: #7285c8;
+}
+
+.post .title {
+    background: #101d4a url("tile.png");
+    position: relative;
+    margin-right: -18px;
+
+    margin-left: 9px;
+}
+
+.post .title::before {
+    content: "";
+    position: absolute;
+    border-top: 21px solid #101d4a;
+    border-right: 18px solid transparent;
+    right: 0;
+    bottom: -1.45em;
+}
+
+.post .content {
+    text-align: justify;
+    padding: 0 15px 15px;
+    font-size: 15px;
+}
+
+.post .content a {
+    color: #7285c8;
+}
+
+.post .content a:hover {
+    color: #101d4a;
+}
+
+.post .content li {
+    margin: initial;
+}
+
+.post .content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post .tags {
+    padding: 20px;
+    display: block;
+    border-top: 1px dotted #DFDFDF;
+}
+
+.post .tags a h4 {
+    color: #6b6d76;
+    padding: 0 10px;
+    margin: 2px;
+    display: inline;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.post .tags a h4:hover {
+    color: #445aa6;
+}
+
+.post .details {
+    font-size: 14px;
+    padding: 7px 0 0;
+    color: #000;
+    text-align: center;
+}
+
+.post .read-more {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.post .read-more a {
+    color: #000;
+}
+
+.pagin a {
+    background-color: #fdfdff;
+    color: #6b6d76;
+    font-size: 14px;
+    padding: 2px 13px;
+    margin: 2px;
+    border: 1px solid #f2f2f6;
+    transition: all .17s ease;
+    cursor: pointer;
+}
+
+.pagin a:hover {
+    background-color: #101d4a;
+    color: #fff;
+}
+
+.pagin {
+    margin: 0 15px 0 4px;
+}
+
+.pagin .new {
+    float: right;
+}
+
+.pagin .old {
+    float: left;
+}
+
+#left {
+    width: 30%;
+    float: left;
+}
+
+.side {
+    background-color: #fff;
+    margin: 0 0 6px;
+}
+
+.side .title {
+    background: #101d4a url("tile.png");
+    position: relative;
+    margin-left: -2em;
+    padding: 5px;
+
+}
+
+.side .title::before {
+    content: "";
+    position: absolute;
+    border-top: 21px solid #101d4a;
+    border-left: 18px solid transparent;
+    left: 0;
+    bottom: -1.45em;
+}
+
+.side h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+.side .content {
+    padding: 10px;
+    background: #fafafa;
+    text-align: justify;
+}
+
+.side .content .avatar {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 5px auto;
+}
+
+.side .content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side .content li {
+    list-style: none;
+    border-top: 1px dotted #ebebf3;
+    margin: 0;
+}
+
+.side .content li:first-child {
+    border-top: 0;
+    padding-top: 10px;
+
+}
+
+.side .content a {
+    color: #3e3e3e;
+}
+
+.side .content a:hover {
+    color: #445aa6;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.f-left {
+    float: left;
+}
+
+.d-block {
+    display: block;
+}
+
+#footer {
+    background: #fff;
+    padding: 20px 0;
+    clear: both;
+    text-align: center;
+    color: #000;
+}
+
+#footer a {
+    color: #000;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    #right, #left {
+        width: 100%;
+    }
+
+    #right {
+        margin-bottom: 6px;
+    }
+
+    .post .content {
+        font-size: 16px;
+    }
+
+    .padd-post, .padd-side {
+        padding: 6px;
+    }
+
+    .pagin {
+        padding: 0 6px 0 0;
+        margin: 0 -2px 0 4px;
+    }
+
+    .side .title {
+        position: unset;
+        margin-left: 0;
+    }
+
+    .side .title::before {
+        border-top: 0;
+        border-left: 0;
+    }
+
+    .post .title {
+        position: unset;
+        margin-right: 9px;
+    }
+
+    .post .title::before {
+        border-top: 0;
+        border-right: 0;
+    }
+}
